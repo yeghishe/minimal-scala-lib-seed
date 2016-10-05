@@ -1,5 +1,5 @@
 name          := "minimal-scala-lib-seed"
-organization  := "com.github.yeghishe"
+organization  := "io.github.yeghishe"
 version       := "0.0.1"
 scalaVersion  := "2.11.8"
 scalacOptions := Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
@@ -7,11 +7,11 @@ scalacOptions := Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf
 resolvers += Resolver.jcenterRepo
 
 libraryDependencies ++= {
-  val scalazV          = "7.3.0-M2"
-  val ficusV           = "1.2.4"
+  val scalazV          = "7.3.0-M5"
+  val ficusV           = "1.2.7"
   val scalaTestV       = "3.0.0"
-  val scalaMockV       = "3.2.2"
-  val scalazScalaTestV = "0.3.0"
+  val scalaMockV       = "3.3.0"
+  val scalazScalaTestV = "1.0.0"
   Seq(
     "org.scalaz"    %% "scalaz-core"                 % scalazV,
     "com.iheart"    %% "ficus"                       % ficusV,
@@ -30,33 +30,3 @@ initialCommands := """|import scalaz._
                       |import scala.concurrent._
                       |import scala.concurrent.duration._""".stripMargin
 
-publishMavenStyle := true
-publishArtifact in Test := false
-pomIncludeRepository := { _ => false }
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
-pomExtra := (
-  <url>http://yeghishe.github.io/</url>
-  <licenses>
-    <license>
-      <name>Apache-2.0</name>
-      <url>http://opensource.org/licenses/Apache-2.0</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <scm>
-    <url>https://github.com/yeghishe/</url>
-    <connection>scm:git:git@github.com:yeghishe/.git</connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>ypiruzyan</id>
-      <name>Yeghishe Piruzyan</name>
-      <url>http://yeghishe.github.io/</url>
-    </developer>
-  </developers>)
