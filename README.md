@@ -15,6 +15,9 @@ This is a seed project which creates a basic build for a general scala library p
 * Has *sbt-scalariform*, *sbt-scapegoat*, *scalastyle-sbt-plugin* and *sbt-scoverage* sbt plugins
 * Test and it folders are setup.
 
+```
+activator new <YOUR PROJECT NAME> minimal-scala-lib-seed
+```
 
 [build-status-badge]: https://img.shields.io/travis/yeghishe/minimal-scala-lib-seed.svg?style=flat-square
 [build-status-url]: https://travis-ci.org/yeghishe/minimal-scala-lib-seed
