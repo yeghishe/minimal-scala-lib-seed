@@ -1,7 +1,7 @@
-name          := "minimal-scala-lib-seed"
-organization  := "io.github.yeghishe"
-version       := "0.0.1"
-scalaVersion  := "2.12.1"
+name := "minimal-scala-lib-seed"
+organization := "io.github.yeghishe"
+version := "0.0.1"
+scalaVersion := "2.12.1"
 scalacOptions := Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 
 resolvers += Resolver.jcenterRepo
@@ -13,9 +13,9 @@ libraryDependencies ++= {
   val catsScalatestV = "2.2.0"
 
   Seq(
-    "org.typelevel"    %% "cats-core" % catsV,
+    "org.typelevel"    %% "cats-core"                   % catsV,
     "com.iheart"       %% "ficus"                       % ficusV,
-    "org.scalamock"    %% "scalamock-scalatest-support" % scalaMockV     % "it,test",
+    "org.scalamock"    %% "scalamock-scalatest-support" % scalaMockV % "it,test",
     "com.ironcorelabs" %% "cats-scalatest"              % catsScalatestV % "it,test"
   )
 }
@@ -28,4 +28,3 @@ initialCommands := """|import cats._
                       |import cats.implicits._
                       |import scala.concurrent._
                       |import scala.concurrent.duration._""".stripMargin
-
