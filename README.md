@@ -1,6 +1,8 @@
 minimal-scala-lib-seed
 =========================
 
+[![Join the chat at https://gitter.im/yeghishe/minimal-scala-lib-seed](https://badges.gitter.im/yeghishe/minimal-scala-lib-seed.svg)](https://gitter.im/yeghishe/minimal-scala-lib-seed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status][build-status-badge]][build-status-url]
 [![Code Quality][code-quality-badge]][code-quality-url]
 
