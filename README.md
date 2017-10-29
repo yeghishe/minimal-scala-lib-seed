@@ -1,6 +1,8 @@
 minimal-scala-lib-seed
 =========================
 
+**Deprecated in favor of [yeghishe/minimal-scala-lib-seed.g8](https://github.com/yeghishe/minimal-scala-lib-seed.g8)**
+
 [![Build Status][build-status-badge]][build-status-url]
 [![Code Quality][code-quality-badge]][code-quality-url]
 
